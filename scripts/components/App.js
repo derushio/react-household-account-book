@@ -6,8 +6,6 @@
 import React from "react";
 import { connect } from "react-redux"
 
-import AppAction from "./../actions/App"
-
 import PlusButton from "./PlusButton"
 import HsaTable from "./HsaTable"
 
@@ -15,6 +13,9 @@ import HsaTable from "./HsaTable"
  * App
  */
 class App extends React.Component {
+    /**
+     * React.Component renderメソッド
+     */
     render() {
         return (
             <div>
@@ -24,6 +25,15 @@ class App extends React.Component {
         );
     }
 
+    static getActions() {
+        return {};
+    }
+
+    /**
+     * ステートからプロパティを生成
+     * @param {object} state - reduxから渡されるステート
+     * @return {object} props - プロパティ
+     */
     static mapStateToProps(state) {
         let props = {
             data: {}

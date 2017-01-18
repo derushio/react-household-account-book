@@ -13,7 +13,10 @@ const initialState = {
 // actionに応じてステート変更
 export default function reducer(state = initialState, action) {
     switch (action.type) {
+        case "ADD_TABLE_ACTION":
+            alert("aiueo");
         default:
-            return state;
     }
+
+    return state;
 }
