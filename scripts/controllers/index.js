@@ -8,14 +8,14 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
 import ConfigureStore from './../store/configureStore';
-import Part from './../containers/part';
+import HsaTable from './../containers/HsaTable';
 
 const store = ConfigureStore();
 const rootEl = document.getElementById('root');
 
 ReactDOM.render(
     <Provider store={store}>
-        <Part />
+        <HsaTable />
     </Provider>,
     rootEl
 );

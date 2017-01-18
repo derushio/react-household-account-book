@@ -1,29 +1,25 @@
 /**
- * containres/part.js
- * トップ画面 action dispatcher
+ * containres/HsaTable.js
  */
 
 import React from 'react'
 import { connect } from 'react-redux'
 
-import Part from '../components/part'
-import PartActions from '../actions/part'
+import HsaTable from '../components/HsaTable'
+import HsaTableAction from '../actions/HsaTable'
 
 /**
  * グローバルなstateから必要な値をとってきて、コンポーネントのthis.propsとしてセット
  * 今回はいずれにしろstateのプロパティには{fuga}しか無いので、stateをまるごと返してます
  */
 function mapStateToProps(state) {
-    return state;
+    let props = {};
+    props.hsaTableModels = state.hsaTableModels;
+    return props;
 }
 
-/**
- * clickでactionを飛ばす
- */
 function mapDispatchToProps(dispatch) {
-    return {
-        handleClick: () => { dispatch(PartActions.increment()); }
-    }
+    return {};
 }
 
 /**
@@ -32,4 +28,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Part);
+)(HsaTable);
