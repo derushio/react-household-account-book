@@ -1,20 +1,19 @@
 /**
  * components/App.js
- * 表 component
+ * アプリ component
  */
 
 import React from 'react';
 
-import PlusButton from './../containers/PlusButton'
-import HsaTable from './../containers/HsaTable'
-
+import PlusButton from './PlusButton'
+import HsaTable from './HsaTable'
 
 export default class App extends React.Component {
     render() {
         return (
             <div>
                 <PlusButton />
-                <HsaTable />
+                <HsaTable data={ this.props.data } />
             </div>
         );
     }

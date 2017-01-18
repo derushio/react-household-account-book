@@ -9,7 +9,11 @@ import App from './../components/App'
 import AppAction from './../actions/App'
 
 let mapStateToProps = (state) => {
-    let props = {};
+    let props = {
+        data: {}
+    };
+    
+    props.data.hsaTableModels = state.hsaTableModels;
     return props;
 }
 

@@ -3,9 +3,11 @@
  * index.html ステート管理スクリプト
  */
 
+import HsaTableModels from './../models/HsaTableModel';
+
 // 初期ステート設定
 const initialState = {
-    hsaTableModels: []
+    hsaTableModels: [new HsaTableModels(null, "aiueo")]
 }
 
 // actionに応じてステート変更
