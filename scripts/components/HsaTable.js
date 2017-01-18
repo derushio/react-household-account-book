@@ -10,7 +10,6 @@ export default class HsaTable extends React.Component {
         let tableModels = this.props.hsaTableModels;
         return (
             <div>
-                { tableModels[0].title }
             </div>
         );
     }
