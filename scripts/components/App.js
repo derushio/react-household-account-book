@@ -3,10 +3,10 @@
  * アプリ component
  */
 
-import React from 'react';
+import React from "react";
 
-import PlusButton from './PlusButton'
-import HsaTable from './HsaTable'
+import PlusButton from "./PlusButton"
+import HsaTable from "./HsaTable"
 
 export default class App extends React.Component {
     render() {

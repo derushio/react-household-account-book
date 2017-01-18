@@ -3,7 +3,7 @@
  * プラスボタン component
  */
 
-import React from 'react';
+import React from "react";
 
 export default class PlusButton extends React.Component {
     render() {
