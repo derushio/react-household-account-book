@@ -1,16 +1,15 @@
 /**
- * containres/HsaTable.js
+ * containres/PlusButton.js
  */
 
 import React from 'react'
 import { connect } from 'react-redux'
 
-import HsaTable from './../components/HsaTable'
-import HsaTableAction from './../actions/HsaTable'
+import PlusButton from './../components/PlusButton'
+import PlusButtonAction from './../actions/PlusButton'
 
 let mapStateToProps = (state) => {
     let props = {};
-    props.hsaTableModels = state.hsaTableModels;
     return props;
 }
 
@@ -24,4 +23,4 @@ let mapDispatchToProps = (dispatch) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(HsaTable);
+)(PlusButton);

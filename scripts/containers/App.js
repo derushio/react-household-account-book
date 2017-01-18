@@ -1,12 +1,12 @@
 /**
- * containres/HsaTable.js
+ * containres/App.js
  */
 
 import React from 'react'
 import { connect } from 'react-redux'
 
-import HsaTable from './../components/HsaTable'
-import HsaTableAction from './../actions/HsaTable'
+import App from './../components/App'
+import AppAction from './../actions/App'
 
 let mapStateToProps = (state) => {
     let props = {};
@@ -24,4 +24,4 @@ let mapDispatchToProps = (dispatch) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(HsaTable);
+)(App);
