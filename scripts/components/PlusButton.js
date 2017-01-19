@@ -6,17 +6,16 @@
 import React from "react";
 import { connect } from "react-redux"
 
+import IndexReducerAction from "../reducerActions/index"
+
+/**
+ * PlusButton
+ */
 class PlusButton extends React.Component {
     render() {
         return (
             <button onClick={ () => this.props.addTableAction() }>+</button>
         );
-    }
-
-    static getActions() {
-        return {
-            addTableAction: {type: "ADD_TABLE_ACTION"}
-        };
     }
 
     /**
@@ -34,7 +33,7 @@ class PlusButton extends React.Component {
     
     static mapDispatchToProps(dispatch) {
         return {
-            addTableAction: () => { dispatch(PlusButton.getActions().addTableAction); }
+            addTableAction: () => { dispatch(IndexReducerAction.getActions().addTableAction()); }
         };
     }
 }

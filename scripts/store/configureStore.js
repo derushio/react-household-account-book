@@ -4,9 +4,14 @@
  */
 
 import { createStore } from "redux";
-import reducer from "./../reducers/index";
+import IndexReducerAction from "./../reducerActions/index";
 
-export default function configureStore() {
-    const store = createStore(reducer);
+/**
+ * ストアを生成
+ */
+function configureStore() {
+    const store = createStore(IndexReducerAction.reducer);
     return store;
 }
+
+export default configureStore;

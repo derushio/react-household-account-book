@@ -5,9 +5,11 @@
 
 import React from "react";
 
-export default class HsaTable extends React.Component {
+/**
+ * HsaTable
+ */
+class HsaTable extends React.Component {
     render() {
-        console.log(this.props);
         let tableModels = this.props.data.hsaTableModels;
         return (
             <table className="table">
@@ -43,3 +45,5 @@ export default class HsaTable extends React.Component {
         );
     }
 }
+
+export default HsaTable;

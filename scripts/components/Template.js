@@ -1,30 +1,18 @@
-/**
- * components/App.js
- * アプリ component
- */
-
 import React from "react";
 import { connect } from "react-redux"
 
 import IndexReducerAction from "../reducerActions/index"
 
-import PlusButton from "./PlusButton"
-import HsaTable from "./HsaTable"
-
 /**
- * App コンポーネント定義クラス
+ * Template
  */
-class App extends React.Component {
+class Template extends React.Component {
     /**
      * React.Component renderメソッド
      */
     render() {
-        // ここにReactのComponentsを入れ込む
         return (
-            <div>
-                <PlusButton />
-                <HsaTable data={ this.props.data }/>
-            </div>
+            <div></div>
         );
     }
 
@@ -34,8 +22,9 @@ class App extends React.Component {
      * @return {object} props - プロパティ
      */
     static mapStateToProps(state) {
-        let props = {};
-        props.data = state;
+        let props = {
+            data: {}
+        };
 
         return props;
     }
@@ -54,6 +43,6 @@ class App extends React.Component {
  * connect関数でReduxとReactコンポーネントを繋ぐ
  */
 export default connect(
-    App.mapStateToProps,
-    App.mapDispatchToProps
-)(App);
+    Template.mapStateToProps,
+    Template.mapDispatchToProps
+)(Template);

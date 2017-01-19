@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 
 import ConfigureStore from "./../store/configureStore";
 
-import App from "./../components/App"
+import App from "./../components/App";
 
 const store = ConfigureStore();
 const rootEl = document.getElementById("root");
